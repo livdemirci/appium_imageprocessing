@@ -1,0 +1,16 @@
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-e9io5j sitelibdir\=./.gem.20240715-52668-e9io5j clean
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-e9io5j sitelibdir\=./.gem.20240715-52668-e9io5j
+make: Nothing to be done for 'all'.
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-e9io5j sitelibdir\=./.gem.20240715-52668-e9io5j install
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-e9io5j sitelibdir\=./.gem.20240715-52668-e9io5j clean

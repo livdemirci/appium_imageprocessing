@@ -1,0 +1,17 @@
+# .solargraph.yml
+---
+include:
+  - "**/*.rb"
+exclude:
+  - spec/**/*
+  - test/**/*
+  - vendor/**/*
+  - ".bundle/**/*"
+  - "node_modules/**/*"
+require: []
+domains: []
+reporters: 
+  - rubocop
+require_paths: []
+plugins: []
+max_files: 5000
