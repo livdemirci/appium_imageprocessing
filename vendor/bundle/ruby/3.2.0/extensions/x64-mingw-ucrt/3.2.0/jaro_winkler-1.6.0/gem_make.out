@@ -1,0 +1,22 @@
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-6upjn4 sitelibdir\=./.gem.20240715-52668-6upjn4 clean
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-6upjn4 sitelibdir\=./.gem.20240715-52668-6upjn4
+generating jaro_winkler_ext-x64-mingw-ucrt.def
+compiling adj_matrix.c
+compiling codepoints.c
+compiling jaro.c
+compiling jaro_winkler.c
+linking shared-object jaro_winkler/jaro_winkler_ext.so
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-6upjn4 sitelibdir\=./.gem.20240715-52668-6upjn4 install
+/usr/bin/install -c -m 0755 jaro_winkler_ext.so ./.gem.20240715-52668-6upjn4/jaro_winkler
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-6upjn4 sitelibdir\=./.gem.20240715-52668-6upjn4 clean

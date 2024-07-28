@@ -1,0 +1,9 @@
+AllCops:
+  Enabled: true
+
+Layout/EmptyLines:
+  AllowAdjacentEmptyLines: false
+  AllowBetweenDefs: false
+
+Layout/SpaceBeforeComment:
+  Enabled: true

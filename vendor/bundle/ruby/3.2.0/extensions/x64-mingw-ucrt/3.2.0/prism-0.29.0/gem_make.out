@@ -1,0 +1,49 @@
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/ext/prism
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+checking for prism.h in C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/include... yes
+checking for prism/extension.h in C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/ext... yes
+checking for whether -fvisibility=hidden is accepted as CFLAGS... yes
+compiling build/static/diagnostic.o
+compiling build/static/encoding.o
+compiling build/static/node.o
+compiling build/static/options.o
+compiling build/static/pack.o
+compiling build/static/prettyprint.o
+compiling build/static/prism.o
+compiling build/static/regexp.o
+compiling build/static/serialize.o
+compiling build/static/static_literals.o
+compiling build/static/token_type.o
+compiling build/static/util/pm_buffer.o
+compiling build/static/util/pm_char.o
+compiling build/static/util/pm_constant_pool.o
+compiling build/static/util/pm_integer.o
+compiling build/static/util/pm_list.o
+compiling build/static/util/pm_memchr.o
+compiling build/static/util/pm_newline_list.o
+compiling build/static/util/pm_string.o
+compiling build/static/util/pm_string_list.o
+compiling build/static/util/pm_strncasecmp.o
+compiling build/static/util/pm_strpbrk.o
+building build/libprism.a with ar
+C:\Ruby32-x64\msys64\ucrt64\bin\ar.exe: creating build/libprism.a
+Running make build/libprism.a with {"SOEXT"=>"dll", "MAKEDIRS"=>"/usr/bin/mkdir -p", "RMALL"=>"rm -fr"}
+creating Makefile
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-md3uek sitelibdir\=./.gem.20240715-52668-md3uek clean
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-md3uek sitelibdir\=./.gem.20240715-52668-md3uek
+generating prism-x64-mingw-ucrt.def
+compiling api_node.c
+compiling api_pack.c
+compiling extension.c
+linking shared-object prism/prism.so
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-md3uek sitelibdir\=./.gem.20240715-52668-md3uek install
+/usr/bin/install -c -m 0755 prism.so ./.gem.20240715-52668-md3uek/prism
+
+current directory: C:/agileway/app/vendor/bundle/ruby/3.2.0/gems/prism-0.29.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20240715-52668-md3uek sitelibdir\=./.gem.20240715-52668-md3uek clean
