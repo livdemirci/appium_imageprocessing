@@ -8,9 +8,25 @@ require 'chunky_png'
 require 'selenium-webdriver'
 require 'rmagick'
 require 'json'
+require 'socket'
 
 describe 'tictactoe' do
-  before(:all) do
+  before(:all) do # rubocop:disable Metrics/BlockLength
+  
+    def get_wsl_ip
+      ipconfig_output = `ipconfig`
+      # WSL (Hyper-V firewall) ile ilgili satırı bul
+      ip_line = ipconfig_output.lines.find { |line| line.include?('vEthernet (WSL (Hyper-V firewall))') }
+      # IP adresinin bulunduğu satırın indeksini al
+      ip_line_index = ipconfig_output.lines.index(ip_line)
+      # IP adresi genellikle 3. satırda bulunur, bu yüzden 2 satır sonrasını alıyoruz
+      ip_address_line = ipconfig_output.lines[ip_line_index + 3]
+      # IP adresini almak için ':' ile ayır ve temizle
+      ip_address_line.split(':').last.strip
+    end
+    
+    wsl_ip = get_wsl_ip
+    
     caps = {
       caps: {
         platformName: 'Android',
@@ -20,11 +36,12 @@ describe 'tictactoe' do
         automationName: 'UiAutomator2'
       },
       appium_lib: {
-        server_url: 'http://127.0.0.1:4723',
+        server_url: "http://#{wsl_ip}:4723",
         wait_timeout: 300_000_000
       }
     }
-
+    
+    puts "WSL IP Address: #{wsl_ip}"  # Kontrol etmek için IP adresini yazdır
     @driver = Appium::Driver.new(caps, true).start_driver
     File.write('session_id.txt', @driver.session_id)
     puts @driver.session_id
@@ -32,7 +49,7 @@ describe 'tictactoe' do
   end
 
   after(:all) do
-    driver.quit
+    # driver.quit
   end
 
   def is_blank_cell(img)

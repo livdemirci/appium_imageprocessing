@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ApiDemos-debug.apk Test Suite" tests="2" time="24.222688799956813" failures="0" errors="1" skipped="0" timestamp="2024-08-06T23:54:55+03:00">
+  <testcase name="ApiDemos-debug.apk Test Suite Apidemos_wifi_checkbox_tiklama ve isim alma" time="4.823810500092804">
+    <error type="Selenium::WebDriver::Error::NoSuchElementError" message="An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception">
+An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception (Selenium::WebDriver::Error::NoSuchElementError)
+Selenium::WebDriver::Error::NoSuchElementError:
+An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/response.rb:62:in `add_cause'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/response.rb:41:in `error'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/response.rb:52:in `assert_ok'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/response.rb:34:in `initialize'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/http/common.rb:101:in `new'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/http/common.rb:101:in `create_response'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/http/default.rb:103:in `request'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/http/common.rb:67:in `call'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/bridge.rb:675:in `execute'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/remote/bridge.rb:543:in `find_element_by'
+C:/Users/livde/.gem/ruby/3.2.0/gems/selenium-webdriver-4.23.0/lib/selenium/webdriver/common/search_context.rb:71:in `find_element'
+./spec/appium_spec.rb:36:in `block (2 levels) in &lt;top (required)&gt;'
+------------------
+--- Caused by: ---
+Selenium::WebDriver::Error::WebDriverError:
+  NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\livde\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:87:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\livde\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\livde\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)    </error>
+  </testcase>
+  <testcase name="ApiDemos-debug.apk Test Suite baska bir test" time="0.00019819987937808037">
+  </testcase>
+</testsuite>

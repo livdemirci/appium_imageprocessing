@@ -1,5 +1,12 @@
 # You need Ruby (Rake, RWebSpec, ci_reporter gems installed)
 #   Simplest way on Windows is to install RubyShell (http://agileway.com.au/downloads)
+# Rakefile örneği
+
+# Burada diğer Rake görevleri olabilir
+task :default do
+  puts 'Hello, World!'
+end
+
 gem 'ci_reporter'
 gem 'rspec'
 require 'rspec/core/rake_task'
@@ -33,14 +40,12 @@ end
 def specs_for_quick_build
   # list test files to be run in a quick build, leave the caller to set full path
   [
-    'appium_spec.rb',
+
     'tictac_spec.rb',
-    '03_passenger_spec.rb',
-    '04_payment_spec.rb',
+
     'not_exists_spec.rb' # will exclude non-exists test quietly
   ]
 end
-
 
 desc 'run tests in this spec/ folder, option to use INTELLIGENT_ORDERING or/and DYNAMIC_FEEDBACK'
 RSpec::Core::RakeTask.new('ui_tests:quick') do |t|
@@ -50,13 +55,11 @@ RSpec::Core::RakeTask.new('ui_tests:quick') do |t|
   t.rspec_opts = "--pattern my_own_custom_order --require #{buildwise_formatter} #{specs_to_be_executed.join(' ')} --order defined"
 end
 
-
 desc 'run quick tests from BuildWise'
 task 'ci:ui_tests:quick' => ['ci:setup:rspec'] do
   build_id = buildwise_start_build(working_dir: __dir__)
   buildwise_run_sequential_build_target(build_id, 'ui_tests:quick')
 end
-
 
 ## Full Build
 #
@@ -70,14 +73,12 @@ task 'ci:ui_tests:full' => ['ci:setup:rspec'] do
                                                  check_interval: FULL_BUILD_CHECK_INTERVAL)
 end
 
-
 desc 'run all tests in this folder'
 RSpec::Core::RakeTask.new('go') do |t|
   test_files = Dir.glob('*_spec.rb') + Dir.glob('*_test.rb') - excluded_test_files
   t.pattern = FileList[test_files]
   t.rspec_opts = '' # to enable warning: "-w"
 end
-
 
 desc 'Generate stats for UI tests'
 task 'test:stats' do
