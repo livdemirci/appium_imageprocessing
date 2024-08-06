@@ -1,7 +1,5 @@
 # You need Ruby (Rake, RWebSpec, ci_reporter gems installed)
 #   Simplest way on Windows is to install RubyShell (http://agileway.com.au/downloads)
-
-require 'rubygems'
 gem 'ci_reporter'
 gem 'rspec'
 require 'rspec/core/rake_task'
@@ -36,7 +34,7 @@ def specs_for_quick_build
   # list test files to be run in a quick build, leave the caller to set full path
   [
     'appium_spec.rb',
-    '02_flight_spec.rb',
+    'tictac_spec.rb',
     '03_passenger_spec.rb',
     '04_payment_spec.rb',
     'not_exists_spec.rb' # will exclude non-exists test quietly
