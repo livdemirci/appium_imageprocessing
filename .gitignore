@@ -62,9 +62,6 @@ build-iPhoneSimulator/
 # Used by dotenv library to load environment variables.
 # .env
 
-# Gemfile
-# Gemfile.lock
-
 # OS or Editor specific files
 .DS_Store
 *.swp
