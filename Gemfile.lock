@@ -26,8 +26,12 @@ GEM
     base64 (0.2.0)
     benchmark (0.3.0)
     bigdecimal (3.1.8)
+    builder (3.3.0)
     byebug (11.1.3)
     chunky_png (1.4.0)
+    ci_reporter (2.1.0)
+      builder (>= 2.1.2)
+      rexml
     coderay (1.1.3)
     concurrent-ruby (1.3.3)
     connection_pool (2.4.1)
@@ -78,6 +82,7 @@ GEM
     racc (1.8.0)
     rack (3.1.7)
     rainbow (3.1.1)
+    rake (13.2.1)
     rbs (2.8.4)
     regexp_parser (2.9.2)
     reverse_markdown (2.1.1)
@@ -154,7 +159,7 @@ GEM
       thor (~> 1.0)
       tilt (~> 2.0)
       yard (~> 0.9, >= 0.9.24)
-    sorbet-runtime (0.5.11491)
+    sorbet-runtime (0.5.11505)
     standard (1.39.2)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
@@ -188,12 +193,14 @@ DEPENDENCIES
   base64
   byebug
   chunky_png
+  ci_reporter
   fileutils
   image_processing
   image_science
   mini_magick
   pry
   pry-byebug
+  rake
   rmagick
   rspec
   rubocop-rails
@@ -204,4 +211,4 @@ DEPENDENCIES
   standard
 
 BUNDLED WITH
-   2.5.16
+   2.5.17
