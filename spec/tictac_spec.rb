@@ -32,7 +32,7 @@ describe 'tictactoe' do
   end
 
   after(:all) do
-    # @driver.quit unless debugging?
+    driver.quit
   end
 
   def is_blank_cell(img)
