@@ -1,5 +1,4 @@
 ﻿load File.dirname(__FILE__) + '/../test_helper.rb'
-require_relative '../pages/Menu_page'
 require 'pry'
 require 'fileutils'
 require 'appium_lib'
