@@ -21,4 +21,3 @@ gem 'image_processing'
 gem 'image_science'
 gem 'mini_magick'
 gem 'rmagick'
-

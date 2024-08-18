@@ -41,8 +41,8 @@ def specs_for_quick_build
   # list test files to be run in a quick build, leave the caller to set full path
   [
 
+    'appium_spec.rb',
     'tictac_spec.rb',
-
     'not_exists_spec.rb' # will exclude non-exists test quietly
   ]
 end
